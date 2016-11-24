@@ -14,11 +14,13 @@ module.exports = {
 	root: "D:\\dev\\local\\test_for_hash",
 	
 	/// 入口路径
-	entry: ["/Views"],
-	
-	/// 需要处理的文件后缀名
-	exts: [".cshtml"],
+	entries: [
+		{
+			entry: "/Views", /// 入口路径
+			exts: [".cshtml"] /// 需要处理的文件后缀名
+		}
+	],
 	
 	/// hash长度，5-32之间，默认16
-	hashLen: 12
+	hashLen: 10
 };
