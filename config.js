@@ -19,7 +19,7 @@ module.exports = {
 			/// 处理.cshtml文件中的js和css文件
 			entry: "/Views", /// 入口路径
 			exts: [".cshtml"], /// 需要处理的文件后缀名
-			type: ["js", "css"] /// js=>script[href]标签, css=>link[rel=stylesheet]标签
+			type: ["js", "css"] /// js=>script[src]标签, css=>link[rel=stylesheet]标签
 		},
 		{
 			/// 处理css文件中的图片
