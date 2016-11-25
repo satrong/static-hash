@@ -16,9 +16,17 @@ module.exports = {
 	/// 入口路径
 	entries: [
 		{
+			/// 处理.cshtml文件中的js和css文件
 			entry: "/Views", /// 入口路径
-			exts: [".cshtml"] /// 需要处理的文件后缀名
-		}
+			exts: [".cshtml"], /// 需要处理的文件后缀名
+			type: ["js", "css"] /// js=>script[href]标签, css=>link[rel=stylesheet]标签
+		}/*,
+		{
+			/// 处理css文件中的图片
+			entry: "/Content",
+			exts: [".css"],
+		    type: ["image"]
+		}*/
 	],
 	
 	/// hash长度，5-32之间，默认16
