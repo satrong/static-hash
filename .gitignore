@@ -40,3 +40,5 @@ jspm_packages
 node.exe
 .vscode
 start.bat
+
+*.zip
